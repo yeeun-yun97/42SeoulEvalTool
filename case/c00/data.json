@@ -1,0 +1,163 @@
+{
+    "c00":
+    [
+        {
+            "path": "ex00",
+            "fileName": "ft_putchar.c",
+            "prototype": "void ft_putchar(char c);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "00-00",
+                    "values":
+                    ["K"]
+                },
+                {
+                    "expectedResultFile": "00-01",
+                    "values":
+                    ["~"]
+                },
+                {
+                    "expectedResultFile": "00-02",
+                    "values":
+                    [" "]
+                }
+            ]
+        },
+        {
+            "path": "ex01",
+            "fileName": "ft_print_alphabet.c",
+            "prototype": "void ft_print_alphabet(void);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "01-00",
+                    "values":
+                    []
+                }
+            ]
+        },
+        {
+            "path": "ex02",
+            "fileName": "ft_print_reverse_alphabet.c",
+            "prototype": "void ft_print_reverse_alphabet(void);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "02-00",
+                    "values":
+                    []
+                }
+            ]
+        },
+        {
+            "path": "ex03",
+            "fileName": "ft_print_numbers.c",
+            "prototype": "void ft_print_numbers(void);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "03-00",
+                    "values":
+                    []
+                }
+            ]
+        },
+        {
+            "path": "ex04",
+            "fileName": "ft_is_negative.c",
+            "prototype": "void ft_is_negative(int n);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "04-00",
+                    "values":
+                    ["12738"]
+                },
+                {
+                    "expectedResultFile": "04-01",
+                    "values":
+                    ["-1"]
+                }
+            ]
+        },
+        {
+            "path": "ex05",
+            "fileName": "ft_print_comb.c",
+            "prototype": "void ft_print_comb(void);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "05-00",
+                    "values":
+                    []
+                }
+            ]
+        },
+        {
+            "path": "ex06",
+            "fileName": "ft_print_comb2.c",
+            "prototype": "void ft_print_comb2(void);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "06-00",
+                    "values":
+                    []
+                }
+            ]
+        },
+        {
+            "path": "ex07",
+            "fileName": "ft_putnbr.c",
+            "prototype": "void ft_putnbr(int nb);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "07-00",
+                    "values":
+                    ["-1234"]
+                },
+                {
+                    "expectedResultFile": "07-01",
+                    "values":
+                    ["0"]
+                },
+                {
+                    "expectedResultFile": "07-02",
+                    "values":
+                    ["2147483647"]
+                }
+            ]
+        },
+        {
+            "path": "ex08",
+            "fileName": "ft_print_combn.c",
+            "prototype": "void ft_print_combn(int n);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "08-00",
+                    "values":
+                    [
+                        "5"
+                    ]
+                },
+                {
+                    "expectedResultFile": "08-01",
+                    "values":
+                    [
+                        "7"
+                    ]
+                },
+                {
+                    "expectedResultFile": "08-02",
+                    "values":
+                    [
+                        "1"
+                    ]
+                }
+            ]
+        }
+    ]
+}

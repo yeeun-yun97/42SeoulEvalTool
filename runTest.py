@@ -2,9 +2,11 @@ import os;
 import sys;
 import json
 import filecmp;
-import time;
 rootPath = sys.argv[1];
 subjectName = sys.argv[2];
+
+def waitForUser():
+	raw_input("...PRESS ENTER TO NEXT")
 
 def printNewLine(n):
 	for i in range(n):
@@ -18,16 +20,18 @@ def checkNorminette():
 	printUtilFile('.data/norminette');
 	os.system("norminette -R checkForbiddenSourceHeader ./{}/".format(rootPath))
 	printNewLine(4)
+	waitForUser()
 
-def viewAllCodes():
-	printUtilFile('.data/view_source')
-	os.system("cat ./{}/*/*.c".format(rootPath))
-	printNewLine(4)
+#def viewAllCodes():
+#	printUtilFile('.data/view_source')
+#	os.system("cat ./{}/*/*.c".format(rootPath))
+#	printNewLine(4)
 
-def showAllFiles():
+def showFileList():
 	printUtilFile('.data/file_list')
 	os.system("ls -R ./{}/".format(rootPath))
 	printNewLine(4)
+	waitForUser()
 
 def createMain(prototype, values, testPath):
 	with open('main.c', 'w') as outfile:
@@ -86,8 +90,8 @@ def openJson(fileName):
 def printTestStart():
 	printUtilFile('.data/logo')
 	os.system('echo "starting Test for {}"'.format(subjectName))
-	os.system("echo '--------------------------------------------------------\n\n'")
-	time.sleep(3)
+	os.system("echo '--------------------------------------------------------\n'")
+	waitForUser()
 
 def removeTempFiles():
 	os.system("rm -rf main.c main result.txt");
@@ -103,10 +107,11 @@ def runTestCases():
 		os.system('echo "$(tput setab 7)Subject {}$(tput sgr0)"'.format(testPath))
 		os.system('echo "-fileName: {}"'.format(testFile))
 		os.system('echo "-prototype: {}"'.format(prototype))
-		os.system('cat ./rootPath/{}/{}'.format(testPath,testFile))
+		os.system('cat ./{}/{}/{}'.format(rootPath,testPath,testFile))
 		os.system("echo '\n'")
 		testCodeDatas = test['testCodes']
 		testFilePath = createPathToFile(testPath, testFile);
+		waitForUser()
 
 		for code in testCodeDatas:
 			expectedResultFileName = "./_util/case/{}/_result/{}".format(subjectName,code['expectedResultFile'])
@@ -115,15 +120,16 @@ def runTestCases():
 			resultFilePath="result.txt"
 			runMain(resultFilePath)
 			assertEquals(expectedResultFileName, resultFilePath)
+			waitForUser()
 
 
 
 printTestStart()
+showFileList()
 checkNorminette()
 
 
-runTestCases();
-#viewAllCodes();
+runTestCases()
 removeTempFiles()
 
 
