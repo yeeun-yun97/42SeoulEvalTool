@@ -1,0 +1,6 @@
+    int first = {0};
+    int second = {1};
+    ft_swap(&first, &second);
+    printInt(first);
+    printf(" ");
+    printInt(second);

@@ -1,0 +1,11 @@
+    int b = -1;
+    int *ft_b = &b;
+    int **ft2_b = &ft_b;
+    int ***ft3_b = &ft2_b;
+    int ****ft4_b = &ft3_b;
+    int *****ft5_b = &ft4_b;
+    int ******ft6_b = &ft5_b;
+    int *******ft7_b = &ft6_b;
+    int ********ft8_b = &ft7_b;
+    ft_ultimate_ft(&ft8_b);
+    printInt(********ft8_b);

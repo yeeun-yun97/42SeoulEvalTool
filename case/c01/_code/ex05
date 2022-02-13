@@ -1,0 +1,2 @@
+    char *str = "{0}";
+    ft_putstr(str);

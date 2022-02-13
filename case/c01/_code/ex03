@@ -1,0 +1,8 @@
+    int first = {0};
+    int second = {1};
+    int third=0;
+    int fourth=0;
+    ft_div_mod(first, second, &third, &fourth);
+    printInt(third);
+    printf(" ");
+    printInt(fourth);

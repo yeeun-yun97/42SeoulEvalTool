@@ -1,0 +1,156 @@
+{
+    "c01":
+    [
+        {
+            "path": "ex00",
+            "fileName": "ft_ft.c",
+            "prototype": "void ft_ft(int *nbr);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "00-00",
+                    "values":[]
+                }
+            ]
+        },
+        {
+            "path": "ex01",
+            "fileName": "ft_ultimate_ft.c",
+            "prototype": "void ft_ultimate_ft(int *********nbr);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "01-00",
+                    "values":[]
+                }
+            ]
+        },
+        {
+            "path": "ex02",
+            "fileName": "ft_swap.c",
+            "prototype": "void ft_swap(int *a, int *b);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "02-00",
+                    "values": ["12","24"]
+                },
+                {
+                    "expectedResultFile": "02-01",
+                    "values": ["-2147483648","2147483647"]
+                }
+            ]
+        },
+        {
+            "path": "ex03",
+            "fileName": "ft_div_mod.c",
+            "prototype": "void ft_div_mod(int a, int b, int *div, int *mod);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "03-00",
+                    "values":["11", "10"]
+                },
+                {
+                    "expectedResultFile": "03-01",
+                    "values":["73","7"]
+                }
+            ]
+        },
+        {
+            "path": "ex04",
+            "fileName": "ft_ultimate_div_mod.c",
+            "prototype": "void ft_ultimate_div_mod(int *a, int *b);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "04-00",
+                    "values":["11", "10"]
+                },
+                {
+                    "expectedResultFile": "04-01",
+                    "values":["73", "7"]
+                }
+            ]
+        },
+        {
+            "path": "ex05",
+            "fileName": "ft_putstr.c",
+            "prototype": "void ft_putstr(char *str);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "05-00",
+                    "values":["testtest123"]
+                },
+                {
+                    "expectedResultFile": "05-01",
+                    "values":["1234567890alqpwoeiru1234567890"]
+                }
+            ]
+        },
+        {
+            "path": "ex06",
+            "fileName": "ft_strlen.c",
+            "prototype": "int ft_strlen(char *str);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "06-00",
+                    "values":["testtest123"]
+                },
+                {
+                    "expectedResultFile": "06-01",
+                    "values":["1234567890alqpwoeiru1234567890"]
+                }
+            ]
+        },
+        {
+            "path": "ex07",
+            "fileName": "ft_rev_int_tab.c",
+            "prototype": "void ft_rev_int_tab(int *tab, int size);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "07-00",
+                    "values":["1,2,3,4,5","5"]
+                },
+
+                {
+                    "expectedResultFile": "07-01",
+                    "values":["0, 79, -38472, 37269, 393277, 235887","6"]
+                },
+                {
+                    "expectedResultFile": "07-02",
+                    "values":["-1","1"]
+                }
+
+           
+            ]
+        },
+
+        {
+            "path": "ex08",
+            "fileName": "ft_sort_int_tab.c",
+            "prototype": "void ft_sort_int_tab(int *tab, int size);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "08-00",
+                    "values":["1,2,3,4,5","5"]
+                },
+                {
+                    "expectedResultFile": "08-01",
+                    "values":["36, -4, -27, 239847, 67, 90, 68","7"]
+                },
+  {
+                    "expectedResultFile": "08-02",
+                    "values":["-80, -2339987, -55, -8, -9000, -733","6"]
+                }
+                
+
+           
+            ]
+        }
+    ]
+}
