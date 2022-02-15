@@ -127,6 +127,11 @@
                     "expectedResultFile": "07-02",
                     "values":
                     ["2147483647"]
+                },
+                {
+                    "expectedResultFile": "07-03",
+                    "values":
+                    ["-2147483648"]
                 }
             ]
         },
@@ -155,6 +160,20 @@
                     "values":
                     [
                         "1"
+                    ]
+                },
+                {
+                    "expectedResultFile": "08-03",
+                    "values":
+                    [
+                        "2"
+                    ]
+                },
+                {
+                    "expectedResultFile": "08-04",
+                    "values":
+                    [
+                        "3"
                     ]
                 }
             ]

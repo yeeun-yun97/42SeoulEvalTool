@@ -1,0 +1,18 @@
+{
+	"c02":
+	[
+        {	
+            "path": "ex00",
+            "fileName": "ft_strcpy.c",
+            "prototype": "void ft_strcpy(char *dest, char *src);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "12-00",
+                    "values":
+                    []
+                }
+            ]
+        }
+	]
+}
