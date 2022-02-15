@@ -1,0 +1,3 @@
+	char src[{0}] = {1};
+	printf("%d",ft_str_is_alpha(src));
+	
