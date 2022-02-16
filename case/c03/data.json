@@ -1,0 +1,133 @@
+{
+    "c03":
+    [
+        {
+            "path": "ex00",
+            "fileName": "ft_strcmp.c",
+            "prototype": "int ft_strcmp(char *s1, char *s2);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "00-00",
+                    "values":
+                    [
+                        "\"BlockDMask\"",
+                        "\"Block\""
+                    ]
+                },
+                {
+                    "expectedResultFile": "00-01",
+                    "values":
+                    [
+                        "\"BlockDMask\"",
+                        "\"BlockDMask\""
+                    ]
+                },
+                {
+                    "expectedResultFile": "00-02",
+                    "values":
+                    [
+                        "\"BlockDMask\"",
+                        "\"BlockFMask\""
+                    ]
+                },
+                {
+                    "expectedResultFile": "00-03",
+                    "values":
+                    [
+                        "\"BlockDMask\"",
+                        "\"BlockAMask\""
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "ex01",
+            "fileName": "ft_strncmp.c",
+            "prototype": "int ft_strncmp(char *s1, char *s2, unsigned int n);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "01-00",
+                    "values":
+                    [
+                        "\"BlockDMask\"",
+                        "\"Block\"",
+                        "5"
+                    ]
+                },
+                {
+                    "expectedResultFile": "01-01",
+                    "values":
+                    [
+                        "\"BlockDMask\"",
+                        "\"Block\"",
+                        "20"
+                    ]
+                },
+                {
+                    "expectedResultFile": "01-02",
+                    "values":
+                    [
+                        "\"ToTo\"",
+                        "\"There are Birds\"",
+                        "40"
+                    ]
+                },
+                {
+                    "expectedResultFile": "01-03",
+                    "values":
+                    [
+                        "\"\"",
+                        "\"B\"",
+                        "10"
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "ex02",
+            "fileName": "ft_strncmp.c",
+            "prototype": "int ft_strncmp(char *s1, char *s2, unsigned int n);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "02-00",
+                    "values":
+                    [
+                        "\"BlockDMask\"",
+                        "\"Block\"",
+                        "5"
+                    ]
+                },
+                {
+                    "expectedResultFile": "02-01",
+                    "values":
+                    [
+                        "\"BlockDMask\"",
+                        "\"Block\"",
+                        "20"
+                    ]
+                },
+                {
+                    "expectedResultFile": "02-02",
+                    "values":
+                    [
+                        "\"ToTo\"",
+                        "\"There are Birds\"",
+                        "40"
+                    ]
+                },
+                {
+                    "expectedResultFile": "02-03",
+                    "values":
+                    [
+                        "\"\"",
+                        "\"B\"",
+                        "10"
+                    ]
+                }
+            ]
+        }
+    ]
+}

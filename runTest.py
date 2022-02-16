@@ -100,7 +100,11 @@ def runTestCases():
 	dataObject=openJson('./_util/case/{}/data.json'.format(subjectName))
 	testDatas=dataObject[subjectName]
 
+	index=0;
 	for test in testDatas:
+		if(len(sys.argv)>3 and index<int(sys.argv[3])):
+			index+=1
+			continue
 		testPath = test['path']
 		testFile = test['fileName']
 		prototype = test['prototype']
@@ -112,7 +116,7 @@ def runTestCases():
 		testCodeDatas = test['testCodes']
 		testFilePath = createPathToFile(testPath, testFile);
 		waitForUser()
-
+		
 		for code in testCodeDatas:
 			expectedResultFileName = "./_util/case/{}/_result/{}".format(subjectName,code['expectedResultFile'])
 			createMain(prototype, code['values'],testPath)
@@ -121,8 +125,7 @@ def runTestCases():
 			runMain(resultFilePath)
 			assertEquals(expectedResultFileName, resultFilePath)
 			waitForUser()
-
-
+		index+=1
 
 printTestStart()
 showFileList()

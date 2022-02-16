@@ -1,0 +1,6 @@
+	char dest[{0}];
+	char src[{0}] = {1};
+	unsigned int size = {2};
+	unsigned int result = ft_strlcpy(dest, src, size);
+	printf("%s\n",dest);
+	printf("%d",result);

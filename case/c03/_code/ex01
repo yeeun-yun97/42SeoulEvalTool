@@ -1,0 +1,4 @@
+	char *s1  = {0};
+	char *s2  = {1};
+	unsigned int n = {2};
+	printf("%d",ft_strncmp(s1, s2, n));

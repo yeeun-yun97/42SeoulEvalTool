@@ -444,6 +444,92 @@
                     ]
                 }
             ]
+        },
+        {
+            "path": "ex10",
+            "fileName": "ft_strlcpy.c",
+            "prototype": "unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "10-00",
+                    "values":
+                    [
+                        "10",
+                        "\"123456\"",
+                        "13"
+                    ]
+                },
+                {
+                    "expectedResultFile": "10-01",
+                    "values":
+                    [
+                        "10",
+                        "\"123456\"",
+                        "6"
+                    ]
+                },
+                {
+                    "expectedResultFile": "10-02",
+                    "values":
+                    [
+                        "15",
+                        "\"0We 1are You\"",
+                        "0"
+                    ]
+                },
+                {
+                    "expectedResultFile": "10-03",
+                    "values":
+                    [
+                        "1",
+                        "{0}",
+                        "0"
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "ex11",
+            "fileName": "ft_putstr_non_printable.c",
+            "prototype": "void ft_putstr_non_printable(char *str);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "11-00",
+                    "values":
+                    [
+                        "\"Coucou\\ntu vas bien ?\""
+                    ]
+                },
+                {
+                    "expectedResultFile": "11-01",
+                    "values":
+                    [
+                        "{'0',1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16}"
+                    ]
+                },
+                {
+                    "expectedResultFile": "11-02",
+                    "values":
+                    [
+                        "\"\\\\'/<>!@#$%^&*()_+-=  0.2158\\n\\tasdf\""
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "ex12",
+            "fileName": "ft_print_memory.c",
+            "prototype": "void *ft_print_memory(void *addr, unsigned int size);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "12-00",
+                    "values":
+                    []
+                }
+            ]
         }
     ]
 }

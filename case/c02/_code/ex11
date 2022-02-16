@@ -1,0 +1,2 @@
+	char str1[1000] = {0};
+	ft_putstr_non_printable(str1);
