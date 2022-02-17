@@ -1,2 +1,2 @@
     char *str = "{0}";
-    printInt(ft_strlen(str));
+    printf("%d",ft_strlen(str));

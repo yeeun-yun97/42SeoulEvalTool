@@ -1,0 +1,4 @@
+	char dest[{0}]={1};
+	char src[{2}]={3};
+	unsigned int size = {4};
+	printf("%s\n%d", dest, ft_strlcat(dest, src, size));

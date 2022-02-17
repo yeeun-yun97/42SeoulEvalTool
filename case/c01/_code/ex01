@@ -8,4 +8,4 @@
     int *******ft7_b = &ft6_b;
     int ********ft8_b = &ft7_b;
     ft_ultimate_ft(&ft8_b);
-    printInt(********ft8_b);
+    printf("%d",********ft8_b);

@@ -3,7 +3,7 @@
     ft_rev_int_tab(tab, size);
     int index = 0;
     while(index<size){{
-        printInt(tab[index]);
+        printf("%d",tab[index]);
         printf(" ");
         index++;
     }}

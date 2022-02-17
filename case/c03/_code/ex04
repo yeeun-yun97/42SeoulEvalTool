@@ -1,0 +1,11 @@
+	char src[{0}]={1};
+	char to_find[{0}]={2};
+	char *result = ft_strstr(src, to_find);
+	if(result==0)
+	{{
+		printf("NULL");
+	}} 
+	else
+	{{
+		printf("%s",result);
+	}}

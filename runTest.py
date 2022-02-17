@@ -41,7 +41,6 @@ def createMain(prototype, values, testPath):
 	with open('main.c', 'w') as outfile:
 		outfile.write("/*Auto-Created-Main*/\n\n")
 		outfile.write("#include <stdio.h>\n")
-		outfile.write('#include "./_util/.data/testFunc.c"')
 		outfile.write("\n")
 		outfile.write("{}\n".format(prototype))
 		outfile.write("\n")

@@ -87,44 +87,202 @@
         },
         {
             "path": "ex02",
-            "fileName": "ft_strncmp.c",
-            "prototype": "int ft_strncmp(char *s1, char *s2, unsigned int n);",
+            "fileName": "ft_strcat.c",
+            "prototype": "char *ft_strcat(char *dest, char *src);",
             "testCodes":
             [
                 {
                     "expectedResultFile": "02-00",
                     "values":
                     [
-                        "\"BlockDMask\"",
+                        "\"This is a \"",
                         "\"Block\"",
-                        "5"
+                        "16"
                     ]
                 },
                 {
                     "expectedResultFile": "02-01",
                     "values":
                     [
-                        "\"BlockDMask\"",
-                        "\"Block\"",
-                        "20"
+                        "{0}",
+                        "\"There are Birds\"",
+                        "16"
                     ]
                 },
                 {
                     "expectedResultFile": "02-02",
                     "values":
                     [
-                        "\"ToTo\"",
-                        "\"There are Birds\"",
-                        "40"
+                        "\"\"",
+                        "{0,}",
+                        "1"
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "ex03",
+            "fileName": "ft_strncat.c",
+            "prototype": "char *ft_strncat(char *dest, char *src, unsigned int nb);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "03-00",
+                    "values":
+                    [
+                        "\"aaabbb\"",
+                        "\"BlockDMask\"",
+                        "5",
+                        "12"
                     ]
                 },
                 {
-                    "expectedResultFile": "02-03",
+                    "expectedResultFile": "03-01",
+                    "values":
+                    [
+                        "\"Let's do\"",
+                        "\" our Best!!\"",
+                        "20",
+                        "20"
+                    ]
+                },
+                {
+                    "expectedResultFile": "03-02",
+                    "values":
+                    [
+                        "{0}",
+                        "\"I add string after null\"",
+                        "24",
+                        "24"
+                    ]
+                },
+                {
+                    "expectedResultFile": "03-03",
+                    "values":
+                    [
+                        "\"I add null string after this\"",
+                        "{0}",
+                        "29",
+                        "30"
+                    ]
+                },
+                {
+                    "expectedResultFile": "03-04",
                     "values":
                     [
                         "\"\"",
-                        "\"B\"",
-                        "10"
+                        "{0}",
+                        "1",
+                        "1"
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "ex04",
+            "fileName": "ft_strstr.c",
+            "prototype": "char *ft_strstr(char *str, char *to_find);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "04-00",
+                    "values":
+                    [
+                        "30",
+                        "\"Do you Know Banana?\"",
+                        "\"Banana\""
+                    ]
+                },
+                {
+                    "expectedResultFile": "04-01",
+                    "values":
+                    [
+                        "50",
+                        "\"There are flowers in the garden\"",
+                        "\"bee\""
+                    ]
+                },
+                {
+                    "expectedResultFile": "04-02",
+                    "values":
+                    [
+                        "50",
+                        "\"give first address when finding null\"",
+                        "{0}"
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "ex05",
+            "fileName": "ft_strlcat.c",
+            "prototype": "unsigned int ft_strlcat(char *dest, char *src, unsigned int size);",
+            "testCodes":
+            [
+                {
+                    "expectedResultFile": "05-00",
+                    "values":
+                    [
+                        "17",
+                        "\"Computer \"",
+                        "8",
+                        "\"Science\"",
+                        "17"
+                    ]
+                },
+                {
+                    "expectedResultFile": "05-01",
+                    "values":
+                    [
+                        "30",
+                        "{0}",
+                        "27",
+                        "\"append this String to null\"",
+                        "30"
+                    ]
+                },
+                {
+                    "expectedResultFile": "05-02",
+                    "values":
+                    [
+                        "20",
+                        "\"123\"",
+                        "8",
+                        "\"456789\"",
+                        "20"
+                    ]
+                },
+                {
+                    "expectedResultFile": "05-03",
+                    "values":
+                    [
+                        "20",
+                        "\"123\"",
+                        "8",
+                        "\"456789\"",
+                        "7"
+                    ]
+                },
+                {
+                    "expectedResultFile": "05-04",
+                    "values":
+                    [
+                        "20",
+                        "\"123\"",
+                        "8",
+                        "\"456789\"",
+                        "3"
+                    ]
+                },
+                {
+                    "expectedResultFile": "05-05",
+                    "values":
+                    [
+                        "20",
+                        "\"append null to this\"",
+                        "8",
+                        "{0}",
+                        "20"
                     ]
                 }
             ]
