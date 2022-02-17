@@ -5,6 +5,9 @@ import filecmp;
 rootPath = sys.argv[1];
 subjectName = sys.argv[2];
 
+def clear():
+	os.system("clear")
+
 def waitForUser():
 	raw_input("...PRESS ENTER TO NEXT")
 
@@ -13,6 +16,7 @@ def printNewLine(n):
 		os.system("echo \n")
 
 def printUtilFile(fileName):
+	clear()
 	os.system("cat ./_util/{}".format(fileName))
 	printNewLine(2)
 
@@ -102,15 +106,20 @@ def runTestCases():
 
 	index=0;
 	for test in testDatas:
-		if(len(sys.argv)>3 and index<int(sys.argv[3])):
+		if(len(sys.argv)==4 and index!=int(sys.argv[3])):
 			index+=1
 			continue
+		if(len(sys.argv)==5 and (index<int(sys.argv[3]) or index>int(sys.argv[4]))):
+			index+=1
+			continue
+
 		testPath = test['path']
 		testFile = test['fileName']
 		prototype = test['prototype']
 		os.system('echo "$(tput setab 7)Subject {}$(tput sgr0)"'.format(testPath))
 		os.system('echo "-fileName: {}"'.format(testFile))
 		os.system('echo "-prototype: {}"'.format(prototype))
+		clear()
 		os.system('cat ./{}/{}/{}'.format(rootPath,testPath,testFile))
 		os.system("echo '\n'")
 		testCodeDatas = test['testCodes']
@@ -118,6 +127,7 @@ def runTestCases():
 		waitForUser()
 		
 		for code in testCodeDatas:
+			clear()
 			expectedResultFileName = "./_util/case/{}/_result/{}".format(subjectName,code['expectedResultFile'])
 			createMain(prototype, code['values'],testPath)
 			compileMain(testFilePath)
