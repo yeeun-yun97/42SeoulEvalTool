@@ -38,7 +38,7 @@ git clone <YOUR_REPOSITORY_URL> <FOLDER_NAME>
 인덱스를 두개만 적을 경우 : 앞의 인덱스와 뒤의 인덱스를 포함하여 그 사이의 문제를 테스트하여 보여준다.
 
 ## 사용하는 모습
-![Feb-17-2022 13-48-14](https://user-images.githubusercontent.com/60867063/154407381-01d2d646-a268-41f2-a225-6c18da0d55ee.gif)
+![Feb-17-2022 13-48-14](https://user-images.githubusercontent.com/60867063/154407381-01d2d646-a268-41f2-a225-6c18da0d55ee.gif)    
 fileList를 먼저 보여주고, (.DS_Store 들어있는지 여기서 확인!)    
 Norminette를 실행하여 결과 보여주고, (Norm 체크!)    
 cat으로 하나씩 파일 보여주고, 테스트 케이스 성공/실패를 표시한다.    
