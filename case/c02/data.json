@@ -510,6 +510,13 @@
                     ]
                 },
                 {
+                    "expectedResultFile": "11-03",
+                    "values":
+                    [
+                        "{'0',-32, -34, -3, -4, -5}"
+                    ]
+                },
+                {
                     "expectedResultFile": "11-02",
                     "values":
                     [
