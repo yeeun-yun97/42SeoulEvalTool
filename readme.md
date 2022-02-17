@@ -29,7 +29,7 @@ git clone <YOUR_REPOSITORY_URL> <FOLDER_NAME>
 
 3. 파이썬 파일을 실행한다. 
 ```
-./_util/runTest.py <FOLDER_NAME> <SUBJECT_NAME> <INDEX_1> <INDEX_2>
+python ./_util/runTest.py <FOLDER_NAME> <SUBJECT_NAME> <INDEX_1> <INDEX_2>
 ```
 <파이썬 파일 경로> <폴더명> <과제명> <(생략가능)인덱스1> <(생략가능)인덱스2>
 
