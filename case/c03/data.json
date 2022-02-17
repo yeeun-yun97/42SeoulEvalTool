@@ -62,7 +62,7 @@
                     [
                         "\"BlockDMask\"",
                         "\"Block\"",
-                        "20"
+                        "6"
                     ]
                 },
                 {
@@ -70,8 +70,8 @@
                     "values":
                     [
                         "\"ToTo\"",
-                        "\"There are Birds\"",
-                        "40"
+                        "\"Where are Birds\"",
+                        "0"
                     ]
                 },
                 {
@@ -271,11 +271,11 @@
                         "\"123\"",
                         "8",
                         "\"456789\"",
-                        "3"
+                        "4"
                     ]
                 },
                 {
-                    "expectedResultFile": "05-05",
+                    "expectedResultFile": "05-06",
                     "values":
                     [
                         "20",
@@ -283,6 +283,17 @@
                         "8",
                         "{0}",
                         "20"
+                    ]
+                },
+                {
+                    "expectedResultFile": "05-05",
+                    "values":
+                    [
+                        "20",
+                        "\"I have a Key.\"",
+                        "8",
+                        "\" -813\"",
+                        "3"
                     ]
                 }
             ]

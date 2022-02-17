@@ -527,7 +527,26 @@
                 {
                     "expectedResultFile": "12-00",
                     "values":
-                    []
+                    [
+                        "\"SRYOU . ~<-9 starts here! I. am./ king?~\\n\\n\\t\\\"\\\\happy\\\\\\\"\"",
+                        "55"
+                    ]
+                },
+                {
+                    "expectedResultFile": "12-00",
+                    "values":
+                    [
+                        "\"Bonjour les aminches\\n\\t\\fc est fo u.tout.ce qu on peut faire avec.\\n\\tprint_memory\\t\\t\\f.lol.lol. .\"",
+                        "91"
+                    ]
+                },
+                {
+                    "expectedResultFile": "12-00",
+                    "values":
+                    [
+                        "\"Bonjour les aminches\\n\\t\\fc est fo u.tout.ce qu on peut faire avec.\\n\\tprint_memory\\t\\t\\f.lol.lol. .\"",
+                        "0"
+                    ]
                 }
             ]
         }

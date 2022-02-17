@@ -1,6 +1,8 @@
-	char str[100] = "SRYOU . ~<-9 starts here! I. am./ king?~\n\n\t\"\\happy\\\"";
-	printf("----ex12----\n");
-	printf("%s\n  %p\n",str, str);
-	ft_print_memory(str,55);
-	ft_print_memory(str,0);
-	ft_print_memory(str+9,13);
+	char str[100] = {0};
+	ft_print_memory(str,{1});
+
+
+	//char str[100] = "SRYOU . ~<-9 starts here! I. am./ king?~\n\n\t\"\\happy\\\"";
+	//ft_print_memory(str,55);
+	//ft_print_memory(str,0);
+	//ft_print_memory(str+9,13);

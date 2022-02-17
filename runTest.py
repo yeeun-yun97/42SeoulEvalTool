@@ -41,6 +41,7 @@ def createMain(prototype, values, testPath):
 	with open('main.c', 'w') as outfile:
 		outfile.write("/*Auto-Created-Main*/\n\n")
 		outfile.write("#include <stdio.h>\n")
+		outfile.write("#include <string.h>\n")
 		outfile.write("\n")
 		outfile.write("{}\n".format(prototype))
 		outfile.write("\n")
@@ -115,10 +116,10 @@ def runTestCases():
 		testPath = test['path']
 		testFile = test['fileName']
 		prototype = test['prototype']
+		clear()
 		os.system('echo "$(tput setab 7)Subject {}$(tput sgr0)"'.format(testPath))
 		os.system('echo "-fileName: {}"'.format(testFile))
 		os.system('echo "-prototype: {}"'.format(prototype))
-		clear()
 		os.system('cat ./{}/{}/{}'.format(rootPath,testPath,testFile))
 		os.system("echo '\n'")
 		testCodeDatas = test['testCodes']
